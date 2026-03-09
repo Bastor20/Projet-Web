@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elowan Le Thuaut — Mon Parcours</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">E.LT</div>
+            <nav>
+                <ul>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#athletisme">Athlétisme</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#apropos" onclick="closeMobileMenu()">À propos</a></li>
+                <li><a href="#projets" onclick="closeMobileMenu()">Projets</a></li>
+                <li><a href="#athletisme" onclick="closeMobileMenu()">Athlétisme</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-tag">// Étudiant Ingénieur · ENSIBS Lorient</p>
+            <h1>Elowan<br><span>Le Thuaut</span></h1>
+            <p class="hero-desc">Futur spécialiste en <strong>cyberdéfense</strong>, passionné d'informatique et d'athlétisme.</p>
+            <a href="#apropos" class="btn-primary">Découvrir mon parcours</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="deco-grid"></div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> À propos</h2>
+            <div class="apropos-grid">
+                <div class="apropos-text">
+                    <p>
+                        Étudiant en première année de <strong>Parcours École Ingénieur (PEI-A)</strong> à l'ENSIBS de Lorient,
+                        je suis une formation alliant une licence SNIO et des enseignements renforcés en ingénierie.
+                    </p>
+                    <p>
+                        Passionné par la cybersécurité, j'aspire à intégrer le domaine de la
+                        <strong>cyberdéfense au sein de l'armée</strong>.
+                        Curieux et rigoureux, je développe mes compétences en programmation
+                        tout en m'investissant dans la compétition sportive.
+                    </p>
+                </div>
+                <div class="competences">
+                    <h3>Compétences</h3>
+                    <table class="table-competences">
+                        <tbody>
+                            <tr>
+                                <td class="td-label">Langages</td>
+                                <td>Python, C</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Outils</td>
+                                <td>Word, Excel</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Cybersécurité</td>
+                                <td>Notions — CTF</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Langues</td>
+                                <td>Anglais B2 (Evalang)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Certifications</td>
+                                <td>PSC1 · Permis B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Projets</h2>
+            <div class="projets-grid">
+
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <span class="projet-year">2025</span>
+                        <span class="projet-tag">Web</span>
+                    </div>
+                    <h3>Site Web Personnel</h3>
+                    <p>
+                        Réalisation d'un site web personnel en HTML, CSS et JavaScript dans le cadre
+                        du module Web de la formation PEI-A. Objectif : présenter son parcours de façon interactive.
+                    </p>
+                    <div class="projet-techs">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <span class="projet-year">2023 — 2024</span>
+                        <span class="projet-tag">CTF</span>
+                    </div>
+                    <h3>NBCTF</h3>
+                    <p>
+                        Participation au NBCTF, une compétition de cybersécurité de type Capture The Flag,
+                        en Première et en Terminale. Mise en pratique de notions de sécurité informatique :
+                        analyse de vulnérabilités et résolution de challenges techniques.
+                    </p>
+                    <div class="projet-techs">
+                        <span>Cybersécurité</span><span>CTF</span><span>Linux</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ATHLÉTISME -->
+    <section id="athletisme" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Athlétisme</h2>
+            <div class="athle-grid">
+                <div class="athle-text">
+                    <p>
+                        Athlète en compétition depuis <strong>4 ans</strong>, spécialisé dans les épreuves de sprint
+                        (60m au 400m) avec une pratique complémentaire en demi-fond.
+                        Je m'entraîne et concours à un <strong>niveau régional</strong>.
+                    </p>
+                    <p>
+                        Le sport de compétition m'a forgé des qualités qui se retrouvent dans mon travail :
+                        rigueur, persévérance et dépassement de soi.
+                    </p>
+                </div>
+                <div class="records">
+                    <h3>Records personnels</h3>
+                    <table class="table-records">
+                        <thead>
+                            <tr>
+                                <th>Épreuve</th>
+                                <th>Record</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>60 m</td><td>7''77</td></tr>
+                            <tr><td>100 m</td><td>12''34</td></tr>
+                            <tr><td>200 m</td><td>25''27</td></tr>
+                            <tr><td>400 m</td><td>57''83</td></tr>
+                            <tr><td>5 km</td><td>18'52''</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Contact</h2>
+            <p class="contact-intro">N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+            <div class="contact-links">
+                <a href="mailto:elowanlt@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">elowanlt@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/elowan-le-thuaut" target="_blank" class="contact-card">
+                    <span class="contact-icon">in</span>
+                    <div>
+                        <p class="contact-label">LinkedIn</p>
+                        <p class="contact-value">Elowan Le Thuaut</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Bastor20" target="_blank" class="contact-card">
+                    <span class="contact-icon">⌥</span>
+                    <div>
+                        <p class="contact-label">GitHub</p>
+                        <p class="contact-value">Bastor20</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Elowan Le Thuaut — ENSIBS Lorient</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
