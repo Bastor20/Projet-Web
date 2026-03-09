@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elowan Le Thuaut — Athlétisme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">HELLO.ONE</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#apropos">À propos</a></li>
+                    <li><a href="index.html#projets">Projets</a></li>
+                    <li><a href="athletisme.html" class="nav-active">Athlétisme</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- HERO ATHLÉTISME -->
+    <section id="hero-athle">
+        <div class="hero-content">
+            <a href="index.html" class="btn-retour">← Retour à l'accueil</a>
+            <p class="hero-tag">// Athlète · ACRLP Pontivy</p>
+            <h1><span>Athlétisme</span></h1>
+            <p class="hero-desc">Sprint & demi-fond — 4 ans de compétition, toujours en quête de performance.</p>
+            <a href="#presentation" class="btn-primary">Découvrir</a>
+        </div>
+    </section>
+
+    <!-- SECTION PRÉSENTATION -->
+    <section id="presentation" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Présentation</h2>
+            <div class="apropos-grid">
+                <div class="apropos-text">
+                    <p>
+                        Athlète en compétition depuis <strong>4 ans</strong> au sein du club
+                        <strong>ACRLP Pontivy</strong>, je me spécialise dans les épreuves de sprint,
+                        du 60m au 400m, avec une pratique complémentaire en demi-fond sur 5 km.
+                    </p>
+                    <p>
+                        Je concours à un <strong>niveau régional</strong> et m'entraîne
+                        <strong>3 fois par semaine</strong> — le mardi, le jeudi et le samedi.
+                    </p>
+                    <p>
+                        La discipline sportive que j'ai développée se reflète directement dans mon travail :
+                        meilleur contrôle de soi, canalisation.
+                    </p>
+                </div>
+                <div class="competences">
+                    <h3>Entraînement hebdomadaire</h3>
+                    <table class="table-competences">
+                        <tbody>
+                            <tr>
+                                <td class="td-label">Mardi</td>
+                                <td>Séance de fractionné ou footing</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Jeudi</td>
+                                <td>Séance de sprint</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Samedi</td>
+                                <td>Séance d'intensité</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Club</td>
+                                <td>ACRLP Pontivy</td>
+                            </tr>
+                            <tr>
+                                <td class="td-label">Niveau</td>
+                                <td>Régional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RECORDS -->
+    <section id="records" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Records personnels</h2>
+            <p class="contact-intro">Cliquez sur le bouton pour afficher mes records actuels.</p>
+            <button class="btn-primary" id="btn-records" onclick="afficherRecords()">Afficher mes records ▾</button>
+            <div id="tableau-records" class="records-hidden">
+                <table class="table-records" style="margin-top: 2rem; max-width: 400px;">
+                    <thead>
+                        <tr>
+                            <th>Épreuve</th>
+                            <th>Record</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>60 m</td><td>7''77</td></tr>
+                        <tr><td>100 m</td><td>12''34</td></tr>
+                        <tr><td>200 m</td><td>25''27</td></tr>
+                        <tr><td>400 m</td><td>57''83</td></tr>
+                        <tr><td>5 km</td><td>18'52''</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION OBJECTIFS -->
+    <section id="objectifs" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Objectifs saison 2026</h2>
+            <div class="projets-grid">
+
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <span class="projet-year">Saison estivale 2026</span>
+                        <span class="projet-tag">Sprint</span>
+                    </div>
+                    <h3>400 mètres</h3>
+                    <p>
+                        Battre mon record personnel et passer sous la barre des <strong>57 secondes</strong>.
+                    </p>
+                    <div class="projet-techs">
+                        <span>Record actuel : 57''83</span>
+                        <span>Objectif : &lt; 57''00</span>
+                    </div>
+                </div>
+
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <span class="projet-year">Saison estivale 2026</span>
+                        <span class="projet-tag">Demi-fond</span>
+                    </div>
+                    <h3>5 kilomètres</h3>
+                    <p>
+                        Passer sous les <strong>18 minutes</strong> sur 5 km,
+                        améliorer mon record actuel de 18'52''.
+                    </p>
+                    <div class="projet-techs">
+                        <span>Record actuel : 18'52''</span>
+                        <span>Objectif : &lt; 18'00''</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PHOTOS -->
+    <section id="photos" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span>//</span> Photos</h2>
+            <p class="contact-intro">Photos en compétition et avec le club ACRLP Pontivy.</p>
+            <div class="photos-grid" id="photos-grid">
+                <div class="photo-item">
+                    <img src="club_groupe.jpg" alt="Photo de groupe du club ACRLP Pontivy en compétition" onclick="ouvrirLightbox(this)">
+                    <p class="photo-legende">Délégation du club lors des Marronaises de Redon.</p>
+                </div>
+                <div class="photo-item">
+                    <img src="IMG_5318.JPG" alt="Elowan Le Thuaut en course sur piste" onclick="ouvrirLightbox(this)">
+                    <p class="photo-legende">En compétition sur piste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="fermerLightbox()">
+        <span id="lightbox-fermer">✕</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>2025 Elowan Le Thuaut — ENSIBS Lorient</p>
+        <p class="footer-visite">Dernière visite : <span id="derniere-visite"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
